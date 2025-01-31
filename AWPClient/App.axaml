@@ -1,0 +1,22 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="AWPClient.App"
+             xmlns:local="using:AWPClient"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+
+  <Application.Styles>
+    <FluentTheme />
+    <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"></StyleInclude>
+    <StyleInclude Source="avares://AWPClient/Styles/AppResources.axaml"></StyleInclude>
+  </Application.Styles>
+  <Application.Resources>
+    <FontFamily x:Key="Courser">avares://AWPClient/Assets/fonts/XO_Courser_Nu.ttf#Courser</FontFamily>
+    <FontFamily x:Key="Verbena">avares://AWPClient/Assets/fonts/XO_Verbena_Nu.ttf#Verbena</FontFamily>
+
+  </Application.Resources>
+</Application>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWPClient", "AWPClient\AWPClient.csproj", "{993F81B9-AF17-4EFD-AD80-086D570CB309}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{993F81B9-AF17-4EFD-AD80-086D570CB309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993F81B9-AF17-4EFD-AD80-086D570CB309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993F81B9-AF17-4EFD-AD80-086D570CB309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993F81B9-AF17-4EFD-AD80-086D570CB309}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15B56F6B-BB9D-41BE-8104-F632AC97E2BC}
+	EndGlobalSection
+EndGlobal

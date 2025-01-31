@@ -1,0 +1,23 @@
+<Root>
+  <Item>
+    <ID>bd4d2599-6afc-457d-a162-8c02eff52f61</ID>
+    <DateTime>24.01.2025 9:37:43</DateTime>
+    <MethodName>SetVariable</MethodName>
+    <Exception>Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера. (192.168.160.31:8080)</Exception>
+    <Description>   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionWithTelemetryAsync(HttpRequestMessage request, HttpConnectionPool pool, Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at AWPClient.Connection.BridgeWorkerService.PostJsonData(String url, HttpContent content) in D:\Проекты\AWPClient\AWPClient\Connection\BridgeWorkerService.cs:line 44
+   at AWPClient.Connection.BridgeWorker.SetVariable(String nameStr, String valueStr) in D:\Проекты\AWPClient\AWPClient\Connection\BridgeWorker.cs:line 181</Description>
+    <Data>
+      <Item>имя переменной: LocationBarcode</Item>
+      <Item>значение переменной: L20100141</Item>
+    </Data>
+  </Item>
+</Root>

@@ -1,0 +1,6 @@
+D:\Linux\ios\AWPClient.pdb
+D:\Linux\ios\libAvaloniaNative.dylib
+D:\Linux\ios\libHarfBuzzSharp.dylib
+D:\Linux\ios\libSystem.IO.Ports.Native.dylib
+D:\Linux\ios\libSkiaSharp.dylib
+D:\Linux\ios\AWPClient

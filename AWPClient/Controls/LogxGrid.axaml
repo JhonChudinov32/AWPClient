@@ -1,0 +1,47 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="200"
+             x:Class="AWPClient.Controls.LogxGrid">
+  <Grid x:Name="LayoutRoot">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="40"/>
+      <RowDefinition Height="0.1*"/>
+      <RowDefinition Height="0.7*"/>
+      <RowDefinition Height="0.1*"/>
+    </Grid.RowDefinitions>
+    <Border BorderBrush="#FF000000" BorderThickness="1,1,1,1">
+      <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="40"/>
+          <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Name="arrow">
+          <Canvas.Background>
+            <ImageBrush Source="avares://WpfClient/Assets/iSink.png"/>
+          </Canvas.Background>
+        </Canvas>
+        <ProgressBar Margin="5,5,5,5" Grid.Column="1" SmallChange="1" x:Name="RefreshProgress" Maximum="30" Height="25" Background="White"/>
+      </Grid>
+    </Border>
+    <Border Grid.Row="1" BorderThickness="1,1,1,1" BorderBrush="#FF000000">
+      <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Grid.Row="1" x:Name="HeaderGrid" Background="#FFF9EB55"/>
+    </Border>
+    <Border Grid.Row="2" BorderThickness="1,1,1,1" BorderBrush="#FF000000">
+      <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2" x:Name="MainGrid" Background="#FF000000">
+        <ScrollViewer HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" x:Name="scroll">
+          <StackPanel x:Name="ItemStack"/>
+        </ScrollViewer>
+      </Grid>
+    </Border>
+    <Grid HorizontalAlignment="Stretch"  Grid.Row="3" x:Name="FooterGrid">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.25*"/>
+        <ColumnDefinition Width="0.25*"/>
+      </Grid.ColumnDefinitions>
+    </Grid>
+  </Grid>
+</UserControl>

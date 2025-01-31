@@ -1,0 +1,68 @@
+{
+  "bridge": {
+    "url": "http://192.168.160.31:8080/",
+    "project": "leadwms",
+    "environment": "test",
+    "timeout": 30
+  },
+  "vars": [
+    {
+      "name": "LocationBarcode",
+      "value": "L20100141"
+    },
+    {
+      "name": "DocumentPrinterCode",
+      "value": "PDF24"
+    },
+    {
+      "name": "WarehousePrinterCode",
+      "value": "PDF24"
+    }
+  ],
+  "client": {
+    "TextWrapDataGrid": true,
+    "FullScreen": true,
+    "Width": 1024,
+    "Height": 600,
+    "LongCommandTimeout": 600,
+    "ShortCommandTimeout": 30,
+    "LogPath": "logs/log.xml",
+    "CommDebug": false,
+    "DebugTime": false,
+    "ShowWaitScreenByDefault": true,
+    "UseDirectDbConnect": true,
+    "StyleName": "NewBureauBlue",
+    "UseCommCommand": false,
+    "CollectActualScreens": false,
+    "XamlPath": "Screens",
+    "ErrorProcedure": "Error.axaml",
+    "msgBoxEnabled": false,
+    "logMaterialListSelection": false,
+    "scanModeMsgEnabled": false,
+    "timerLogEnabled": false,
+    "gridLogEnabled": false,
+    "canSkipScreenDraw": true,
+    "specialCharacterBrackets": "",
+    "autoSubmitTimeoutMS": null,
+    "useComPort": null,
+    "StartProcedure": "dbo.wpf_ctrl_main",
+    "procedureReplacements": [],
+    "CommPort": [
+      "COM1 9600 *"
+    ],
+    "Config": "config/setting.json",
+    "AwpApi": [
+      "screens /awp/api/v1/screens",
+      "variables /awp/api/v1/variables",
+      "datasets /awp/api/v1/datasets",
+      "errors /awp/api/v1/errors",
+      "grid /awp/api/v0/grid"
+    ],
+    "clientName": "AWPClient",
+    "ScanPrefix": [
+      "~",
+      "`"
+    ],
+    "clientVersion": "21012025.1"
+  }
+}

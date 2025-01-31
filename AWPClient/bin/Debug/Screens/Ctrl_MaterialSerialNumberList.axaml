@@ -1,0 +1,128 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+             xmlns:views="clr-namespace:AWPClient.Controls">
+  <UserControl.Resources>
+    <SolidColorBrush x:Key="DataGridRowHoveredBackgroundColor" Color="#E0FFFFFF" />
+    <SolidColorBrush x:Key="DataGridRowSelectedUnfocusedBackgroundBrush" Color="#E0FFFFFF" />
+    <SolidColorBrush x:Key="DataGridRowSelectedHoveredUnfocusedBackgroundBrush" Color="#E0FFFFFF" />
+  </UserControl.Resources>
+
+  <UserControl.Styles>
+    <Style Selector="Button">
+      <Setter Property="IsTabStop" Value="False"/>
+      <Setter Property="Focusable" Value="False"/>
+    </Style>
+    <Style Selector="DataGrid">
+      <Setter Property="IsReadOnly" Value="True"/>
+      <Setter Property="HeadersVisibility" Value="Column"/>
+      <Setter Property="SelectionMode" Value="Single"/>
+      <Setter Property="CanUserResizeColumns" Value="False"/>
+      <Setter Property="CanUserSortColumns" Value="False"/>
+      <Setter Property="Foreground" Value="#FFFFFFFF"/>
+      <Setter Property="Background" Value="#FF424242"/>
+      <Setter Property="BorderBrush" Value="#FF575757"/>
+      <Setter Property="HorizontalGridLinesBrush" Value="#FF575757"/>
+      <Setter Property="VerticalGridLinesBrush" Value="#FF575757"/>
+      <Setter Property="RowBackground" Value="#FF2E2E2E"/>
+    </Style>
+    <Style Selector="DataGridRow">
+      <Setter Property="VerticalAlignment" Value="Center"/>
+      <Setter Property="FontFamily" Value="Verbena"/>
+    </Style>
+    <Style Selector="DataGridRow:selected">
+      <Setter Property="Foreground" Value="Black"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+    <Style Selector="DataGridRow:pointerover">
+      <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+    <Style Selector="DataGridColumnHeader">
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="Background" Value="#FF424242"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+      <Setter Property="FontSize" Value="17"/>
+      <Setter Property="BorderBrush" Value="#FF575757"/>
+      <Setter Property="BorderThickness" Value="0,0,1,1"/>
+    </Style>
+  </UserControl.Styles>
+  <Grid>
+    <Border Background="#FF2E2E2E" BorderBrush="#FF575757" BorderThickness="1,1,1,1">
+      <Grid Margin="-1,-1,-1,-1">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="80"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="20"/>
+          <RowDefinition Height="70"/>
+          <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,0,0,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="160"/>
+          </Grid.ColumnDefinitions>
+          <Label Content="\*LOCATION*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+          <Label Content="\*RESOURCE*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+          <Label Content="\*DELIVERY*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="0"/>
+          <Border Grid.Column="3" Grid.Row="0" BorderBrush="#FF575757" BorderThickness="0,0,0,1">
+            <Button Tag="\*BTNTOPTAG*\" Content="\*BTNTOP*\" FontFamily="Courser" FontSize="20" Margin="3,3,3,3" Background="#FF424242" Padding="2" BorderBrush="#FF575757"  Foreground="#FFE0E0E0" x:Name="BTNTOP"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+          </Border>
+          <Border Grid.Column="0" Grid.Row="1" BorderBrush="#FF575757" BorderThickness="0,0,1,1">
+            <Label Content="\*OBJECT1*\" FontFamily="Courser" FontSize="20" FontWeight="Bold" Background="{x:Null}" Foreground="#FFE0E0E0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+          </Border>
+          <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF575757" BorderThickness="0,0,1,1" CornerRadius="0,0,5,0">
+            <Label Content="\*OBJECT2*\" FontFamily="Courser" FontSize="20" FontWeight="Bold" Background="{x:Null}" Foreground="#FFE0E0E0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+          </Border>
+        </Grid>
+        <Border BorderBrush="#FF575757" BorderThickness="0,1,0,1" Grid.Row="3">
+          <Button Tag="\*BTNBOTTOMTAG*\" Content="\*BTNBOTTOM*\" Margin="40,5,40,5" Background="#FF424242" BorderBrush="#FF575757" Foreground="#FFFFFFFF" FontFamily="Courser" FontSize="24" x:Name="BTNBOTTOM" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+        </Border>
+        <Grid Grid.Row="1">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+          <Border Grid.Column="1" Grid.Row="1" Margin="0,0,0,12" Background="#FF424242" CornerRadius="5,5,5,5">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="210"/>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="47"/>
+                <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+              <TextBox Grid.Column="0" Grid.Row="0" Text="Материал:" Background="{x:Null}" Margin="7,7,0,0" Padding="0,0,5,0"  BorderBrush="#FF575757" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+              <TextBox Grid.Column="0" Grid.Row="1" Text="Наименование:" Background="{x:Null}" Margin="7,0,0,7" Padding="0,0,5,0"  BorderBrush="#FF575757" BorderThickness="1,0,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+              <TextBox Grid.Column="1" Grid.Row="0" Text="\*MATCODE*\" Background="{x:Null}" Margin="0,7,7,0" Padding="5,0,105,0"  BorderBrush="#FF575757" BorderThickness="0,1,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center"/>
+              <TextBox Grid.Column="1" Grid.Row="1" Text="\*MATNAME*\" TextWrapping="Wrap" Background="{x:Null}" Margin="0,0,7,7" Padding="5,0,105,0"  BorderBrush="#FF575757" BorderThickness="0,0,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center"/>
+            </Grid>
+          </Border>
+          <Border Grid.Column="1" Grid.Row="2" Background="#FF424242" CornerRadius="5,5,0,0">
+            <Label Content="\*TITLE*\" Background="{x:Null}" Foreground="#FFE0E0E0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verbena" FontSize="24" FontWeight="Bold"/>
+          </Border>
+          <Border Grid.Column="1" Grid.Row="3" Background="#FF424242" Margin="0,3,0,0">
+            <DataGrid x:Name="GRID" Tag="\*GRIDTAG*\" Margin="7,7,7,7" FontFamily="Courser" FontSize="20"/>
+          </Border>
+        </Grid>
+      </Grid>
+    </Border>
+  </Grid>
+  
+</UserControl>

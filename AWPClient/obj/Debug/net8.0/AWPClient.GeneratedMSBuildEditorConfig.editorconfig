@@ -1,0 +1,206 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AWPClient
+build_property.ProjectDir = D:\Проекты\AWPClient\AWPClient\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/Проекты/AWPClient/AWPClient/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/BusyPannel.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/ExCombo.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/ExDataGrid.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/ExListView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/LogxGrid.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/ScanBox.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/SearchList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/SimpleScanBox.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Controls/WaitControl.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/CtrlWarning.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Choose_Many.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Choose_Many2.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Choose_One.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Choose_One_1Btn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Choose_One_1Btn_Causer.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Commit.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_ConfirmShort.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_FocusList_1Btn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_FocusList_2Btn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_FocusList_2Btn_Green.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_InputLabelCount.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_InputQuantity.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Input_Measury.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Input_Quantity.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Input_Weight.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_MaterialBatchList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_MaterialList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_MaterialSerialNumberList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_MaterialSerialNumberListConfirm.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_MaterialUnitList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Message.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Message_2btn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_1Btn+.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Libra.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_MaterialSerialNumber.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_MaterialSerialNumberList.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Buf1+.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Buf1+_Quantity.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Buf1.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Buf2+.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Buf2.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Reject.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Reject_Quantity.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Material_Reject_QuantityAway.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_StorageUnits.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Table_1Btn+.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Table_1Btn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Table_1BtnRecommended.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Table_2Btn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Table_2Pmt.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_Table_Hdr.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Scan_WeightMarked.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_ViewList_1Btn.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_Warn_YesNo.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Ctrl_YesNo.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Error.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/Warning.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Screens/YesNo.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Styles/AppResources.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Проекты/AWPClient/AWPClient/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

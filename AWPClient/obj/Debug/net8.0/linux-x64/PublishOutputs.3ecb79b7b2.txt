@@ -1,0 +1,5 @@
+D:\Linux\linux-x64\AWPClient.pdb
+D:\Linux\linux-x64\libHarfBuzzSharp.so
+D:\Linux\linux-x64\libSystem.IO.Ports.Native.so
+D:\Linux\linux-x64\libSkiaSharp.so
+D:\Linux\linux-x64\AWPClient

@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AWPClient.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="using:AWPClient.Controls"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="500"
+        x:Class="AWPClient.Views.MainWindow"
+        Icon="/Assets/logistix.ico"
+        Loaded="MainWindow_Loaded" Closing="Window_Closing"
+        BorderThickness="0"          
+        xmlns:vms="using:AWPClient.ViewModels"
+       x:DataType="vm:MainWindowViewModel">
+  <Design.DataContext>
+    <vms:MainWindowViewModel />
+  </Design.DataContext>
+     <Grid Name="g1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+       <ContentControl Name="Frame" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+       <views:BusyPannel Name="BusyPannel1" IsVisible="False"/>
+     </Grid>
+</Window>

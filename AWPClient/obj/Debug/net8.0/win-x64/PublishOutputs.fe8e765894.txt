@@ -1,0 +1,5 @@
+D:\Тестирование\AWPClient_v21012025\AWPClient.pdb
+D:\Тестирование\AWPClient_v21012025\av_libglesv2.dll
+D:\Тестирование\AWPClient_v21012025\libHarfBuzzSharp.dll
+D:\Тестирование\AWPClient_v21012025\libSkiaSharp.dll
+D:\Тестирование\AWPClient_v21012025\AWPClient.exe

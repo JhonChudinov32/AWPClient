@@ -1,0 +1,109 @@
+﻿<Styles xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Styles.Resources>
+    <DrawingBrush x:Key="RightArrow" Stretch="Uniform">
+      <DrawingBrush.Drawing>
+        <DrawingGroup>
+          <DrawingGroup.Children>
+            <GeometryDrawing Brush="#FFFFFF00" Geometry="F1 M 4,40.7538L 47.3333,40.7538">
+              <GeometryDrawing.Pen>
+                <Pen Thickness="10" LineJoin="Round" Brush="#FF3CD109"/>
+              </GeometryDrawing.Pen>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFFFFF00" Geometry="F1 M 72,39.5L 44,17L 44,62L 72,39.5 Z ">
+              <GeometryDrawing.Pen>
+                <Pen Thickness="10" LineJoin="Round" Brush="#FF3CD109"/>
+              </GeometryDrawing.Pen>
+            </GeometryDrawing>
+          </DrawingGroup.Children>
+        </DrawingGroup>
+      </DrawingBrush.Drawing>
+    </DrawingBrush>
+    
+    <ImageBrush x:Key="iSink" Source="avares://AWPClient/Images/iSink.png"/>
+    
+    <Style x:Key="TEXT" Selector="TextBox">
+      <Setter Property="IsEnabled" Value="false"/>
+     <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type TextBox}">
+            <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" CornerRadius="0">
+              <ScrollViewer Margin="0" x:Name="PART_ContentHost" Background="{TemplateBinding Background}">
+
+                <TextPresenter Name="PART_TextPresenter"/>
+              </ScrollViewer>
+             
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <Style x:Key="EDIT" Selector="TextBox">
+      <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+      <Setter Property="Focusable" Value="{x:Null}"/>
+    <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type TextBox}">
+            <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" CornerRadius="0">
+              <ScrollViewer Margin="0" x:Name="PART_ContentHost" Background="{TemplateBinding Background}">
+                <TextPresenter Name="PART_TextPresenter"/>
+              
+              </ScrollViewer>
+            
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    
+    <DrawingBrush x:Key="iYellowBrush" TileMode="Tile">
+      <DrawingBrush.Drawing>
+        <DrawingGroup>
+          <DrawingGroup.Children>
+            <GeometryDrawing>
+              <GeometryDrawing.Pen>
+                <Pen Thickness="1" Brush="#FFFF960F"/>
+              </GeometryDrawing.Pen>
+              <GeometryDrawing.Geometry>
+                <LineGeometry StartPoint="0,0" EndPoint="1,0"/>
+              </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing>
+              <GeometryDrawing.Pen>
+                <Pen Thickness="1" Brush="#FFF28E0E"/>
+              </GeometryDrawing.Pen>
+              <GeometryDrawing.Geometry>
+                <LineGeometry StartPoint="0,1" EndPoint="1,1"/>
+              </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+          </DrawingGroup.Children>
+        </DrawingGroup>
+      </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="iBlueBrush" TileMode="Tile">
+      <DrawingBrush.Drawing>
+        <DrawingGroup>
+          <DrawingGroup.Children>
+            <GeometryDrawing>
+              <GeometryDrawing.Pen>
+                <Pen Thickness="1" Brush="#FF028CDF"/>
+              </GeometryDrawing.Pen>
+              <GeometryDrawing.Geometry>
+                <LineGeometry StartPoint="0,0" EndPoint="1,0"/>
+              </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing>
+              <GeometryDrawing.Pen>
+                <Pen Thickness="1" Brush="#FF0278BF"/>
+              </GeometryDrawing.Pen>
+              <GeometryDrawing.Geometry>
+                <LineGeometry StartPoint="0,1" EndPoint="1,1"/>
+              </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+          </DrawingGroup.Children>
+        </DrawingGroup>
+      </DrawingBrush.Drawing>
+    </DrawingBrush>
+  </Styles.Resources>
+</Styles>

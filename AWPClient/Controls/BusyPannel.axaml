@@ -1,0 +1,34 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"
+             x:Class="AWPClient.Controls.BusyPannel">
+  <Grid>
+    <Rectangle Opacity="0.7" Margin="0" Stroke="Black">
+      <Rectangle.Fill>
+        <LinearGradientBrush SpreadMethod="Repeat" StartPoint="50%,0%" EndPoint="50%,100%">
+          <GradientStop Offset="0" Color="#FF000000"/>
+          <GradientStop Offset="0.499" Color="#FF57F7E7"/>
+          <GradientStop Offset="1" Color="#FF000000"/>
+        </LinearGradientBrush>
+      </Rectangle.Fill>
+    </Rectangle>
+
+    <Border Opacity="1" BorderBrush="Black" BorderThickness="1" CornerRadius="0,30,30,30" HorizontalAlignment="Stretch" Margin="170" VerticalAlignment="Stretch" Width="300" Height="120">
+      <Border.Background>
+        <LinearGradientBrush StartPoint="50%,0%" EndPoint="50%,100%">
+          <GradientStop Offset="0" Color="#FFA2F553" />
+          <GradientStop Offset="1" Color="#FFFF0606" />
+          <GradientStop Offset="0.473" Color="#FFFEFF5A"/>
+        </LinearGradientBrush>
+      </Border.Background>
+      <TextBlock FontFamily="Times New Roman" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Идет обработка...">
+        <TextBlock.Effect>
+          <DropShadowDirectionEffect  ShadowDepth="33"/>
+        </TextBlock.Effect>
+      </TextBlock>
+    </Border>
+  
+  </Grid>
+</UserControl>

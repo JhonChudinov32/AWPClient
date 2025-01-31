@@ -1,0 +1,57 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:AWPClient.Controls"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450">
+
+    <Grid>
+      <Border Background="#FF2E2E2E" BorderBrush="#FF575757" BorderThickness="1,1,1,1">
+        <Grid Margin="-1,-1,-1,-1">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="40"/>
+          </Grid.RowDefinitions>
+          <Grid Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="260"/>
+              <ColumnDefinition Width="260"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="160"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="\*LOCATION*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="0"/>
+            <Label Content="\*RESOURCE*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Label Content="\*DELIVERY*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2"/>
+            <Border Grid.Column="3" BorderBrush="#FF575757" BorderThickness="0,0,0,1">
+              <Button Tag="\*BTNTOPTAG*\" Content="\*BTNTOP*\" FontFamily="Courser" FontSize="20" Margin="3,3,3,3" Background="#FF424242" Padding="2" BorderBrush="#FF575757"  Foreground="#FFE0E0E0" x:Name="BTNTOP"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </Border>
+          </Grid>
+          <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="40"/>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="0.5*"/>
+              <RowDefinition Height="160"/>
+              <RowDefinition Height="80"/>
+              <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Column="1" Grid.Row="1" CornerRadius="6,6,0,0" Background="#FF424242">
+              <TextBox Text="\*PROMPT*\" TextWrapping="Wrap" IsReadOnly="True" IsHitTestVisible="False" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFF0F0F0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Padding="5,5,5,5" FontFamily="Verbena" FontSize="32" FontWeight="Bold"/>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="2" CornerRadius="0,0,6,6" Margin="0,4,0,0" Background="#FF424242">
+              <Label Content="\*HINT*\" Foreground="#FFE0E0E0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verbena" FontSize="24" FontWeight="Bold"/>
+            </Border>
+          </Grid>
+          <Border BorderBrush="#FF575757" BorderThickness="0,0,0,1" Grid.Row="2"/>
+          <Grid Tag="\*BARCODEINPUT*\" Grid.Row="3" Margin="0,-1,48,3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <views:ScanBox ScanCode="" Tag="\*SCANBOXTAG*\" GroupCode="*" x:Name="SCANBOX" FontFamily="Courser" Focusable="True"/>
+          </Grid>
+        </Grid>
+      </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,136 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="1000">
+
+  <UserControl.Styles>
+    <Style Selector="Button">
+      <Setter Property="IsTabStop" Value="False"/>
+      <Setter Property="Focusable" Value="False"/>
+    </Style>
+    <Style Selector="DataGrid">
+      <Setter Property="IsReadOnly" Value="True"/>
+      <Setter Property="HeadersVisibility" Value="Column"/>
+      <Setter Property="SelectionMode" Value="Single"/>
+      <Setter Property="CanUserResizeColumns" Value="False"/>
+      <Setter Property="CanUserSortColumns" Value="False"/>
+      <Setter Property="Foreground" Value="#FFFFFFFF"/>
+      <Setter Property="Background" Value="#FF424242"/>
+      <Setter Property="BorderBrush" Value="#FF575757"/>
+      <Setter Property="HorizontalGridLinesBrush" Value="#FF575757"/>
+      <Setter Property="VerticalGridLinesBrush" Value="#FF575757"/>
+      <Setter Property="RowBackground" Value="#FF2E2E2E"/>
+    </Style>
+    <Style Selector="DataGridRow">
+      <Setter Property="VerticalAlignment" Value="Center"/>
+      <Setter Property="FontFamily" Value="Verbena"/>
+    </Style>
+    <Style Selector="DataGridRow:selected">
+      <Setter Property="Foreground" Value="Black"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+    <Style Selector="DataGridRow:pointerover">
+      <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+    <Style Selector="DataGridColumnHeader">
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="Background" Value="#FF424242"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+      <Setter Property="FontSize" Value="17"/>
+      <Setter Property="BorderBrush" Value="#FF575757"/>
+      <Setter Property="BorderThickness" Value="0,0,1,1"/>
+    </Style>
+  </UserControl.Styles>
+
+  <Grid>
+    <Border Background="#FF2E2E2E" BorderBrush="#FF575757" BorderThickness="1,1,1,1">
+      <Grid Margin="-1,-1,-1,-1">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="80"/>
+          <RowDefinition Height="290"/>
+          <RowDefinition Height="0.3*"/>
+          <RowDefinition Height="100"/>
+          <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,0,0,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="160"/>
+          </Grid.ColumnDefinitions>
+          <Label Content="\*LOCATION*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+          <Label Content="\*RESOURCE*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+          <Label Content="\*DELIVERY*\" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="0"/>
+          <Border Grid.Column="3" Grid.Row="0" BorderBrush="#FF575757" BorderThickness="0,0,0,1">
+            <Button x:Name="BTNTOP" Tag="\*BTNTOPTAG*\" Content="\*BTNTOP*\" Margin="3,3,3,3" Padding="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF424242" BorderBrush="#FF575757" Foreground="#FFE0E0E0" FontFamily="Courser" FontSize="20"/>
+          </Border>
+          <Border Grid.Column="0" Grid.Row="1" BorderBrush="#FF575757" BorderThickness="0,0,1,1">
+            <Label Content="\*OBJECT1*\" FontFamily="Courser" FontSize="20" FontWeight="Bold" Background="{x:Null}" Foreground="#FFE0E0E0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+          </Border>
+          <Border Grid.Column="1" Grid.Row="1" BorderBrush="#FF575757" BorderThickness="0,0,1,1" CornerRadius="0,0,5,0">
+            <Label Content="\*OBJECT2*\" FontFamily="Courser" FontSize="20" FontWeight="Bold" Background="{x:Null}" Foreground="#FFE0E0E0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+          </Border>
+        </Grid>
+        <Grid Grid.Row="1">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="50"/>
+          </Grid.RowDefinitions>
+          <Border Grid.Column="1" Grid.Row="1" Margin="0,0,0,12" Background="#FF424242" CornerRadius="5,5,5,5">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="70"/>
+              </Grid.RowDefinitions>
+              <TextBox Grid.Column="0" Grid.Row="0" IsReadOnly="True" IsHitTestVisible="False" Text="Материал:" Background="{x:Null}" Margin="7,7,0,0" Padding="0,0,5,0"  BorderBrush="#FF575757" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+              <TextBox Grid.Column="0" Grid.Row="1" IsReadOnly="True" IsHitTestVisible="False" Text="Наименование:" Background="{x:Null}" Margin="7,0,0,7" Padding="0,0,5,0"  BorderBrush="#FF575757" BorderThickness="1,0,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+              <TextBox Grid.Column="0" Grid.Row="2" IsReadOnly="True" IsHitTestVisible="False" Text="Партия:" Background="{x:Null}" Margin="7,7,0,0" Padding="0,0,5,0"  BorderBrush="#FF575757" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+              <TextBox Grid.Column="0" Grid.Row="3" IsReadOnly="True" IsHitTestVisible="False" Text="Дата Пр./Годен До:" Background="{x:Null}" Margin="7,7,0,0" Padding="0,0,5,0"  BorderBrush="#FF575757" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+              <TextBox Grid.Column="0" Grid.Row="4" IsReadOnly="True" IsHitTestVisible="False" Text="\*QUANTITY_PROMPT*\" Background="{x:Null}" Margin="7,0,0,7" Padding="0,0,5,0"  BorderBrush="#FF575757" BorderThickness="1,0,1,1" Foreground="#FFE0E0E0" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Right"/>
+              <TextBox Grid.Column="1" Grid.Row="0" IsReadOnly="True" IsHitTestVisible="False" Text="\*MATCODE*\" Background="{x:Null}" Margin="0,7,7,0" Padding="5,0,105,0"  BorderBrush="#FF575757" BorderThickness="0,1,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center"/>
+              <TextBox Grid.Column="1" Grid.Row="1" IsReadOnly="True" IsHitTestVisible="False" Text="\*MATNAME*\" TextWrapping="Wrap" Background="{x:Null}" Margin="0,0,7,7" Padding="5,0,105,0"  BorderBrush="#FF575757" BorderThickness="0,0,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center"/>
+              <TextBox Grid.Column="1" Grid.Row="2" IsReadOnly="True" IsHitTestVisible="False" Text="\*SERIAL*\" TextWrapping="Wrap" Background="{x:Null}" Margin="0,0,7,7" Padding="5,0,105,0"  BorderBrush="#FF575757" BorderThickness="0,0,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center"/>
+              <TextBox Grid.Column="1" Grid.Row="3" IsReadOnly="True" IsHitTestVisible="False" Text="\*DATES*\" TextWrapping="Wrap" Background="{x:Null}" Margin="0,0,7,7" Padding="5,0,105,0"  BorderBrush="#FF575757" BorderThickness="0,0,1,1" Foreground="#FFFFFFFF" FontFamily="Verbena" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center"/>
+              <TextBox Grid.Column="1" Grid.Row="4"  Tag="\*QUANTITYTAG*\"  Margin="0,0,7,7" Padding="-5"  TextWrapping="Wrap" BorderBrush="#FF0278BF" BorderThickness="2,2,2,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial" FontSize="56" FontWeight="Bold" x:Name="QUANTITY"/>
+            </Grid>
+          </Border>
+        </Grid>
+        <Border Grid.Row="3" BorderBrush="#FF575757" BorderThickness="0,1,0,0">
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Tag="\*BTNBOTTOM1VIEW*\">
+              <Button Tag="\*BTNBOTTOM1TAG*\" Content="\*BTNBOTTOM1*\" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,6,3,3" Background="#FF424242" BorderBrush="#FF575757" Foreground="#FFE0E0E0" FontFamily="Courser" FontSize="24" x:Name="BTNBOTTOM1"/>
+            </Grid>
+            <Grid Grid.Column="1" Tag="\*BTNBOTTOM2VIEW*\">
+              <Button Tag="\*BTNBOTTOM2TAG*\" Content="\*BTNBOTTOM2*\" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="3,6,3,3" Background="#FF424242" BorderBrush="#FF575757" Foreground="#FFE0E0E0" FontFamily="Courser" FontSize="24" x:Name="BTNBOTTOM2"/>
+            </Grid>
+          </Grid>
+        </Border>
+      </Grid>
+    </Border>
+  </Grid>
+  
+</UserControl>
