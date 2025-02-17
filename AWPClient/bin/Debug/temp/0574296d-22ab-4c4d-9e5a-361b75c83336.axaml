@@ -1,0 +1,123 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450">
+
+
+
+  <UserControl.Resources>
+    <SolidColorBrush x:Key="DataGridRowHoveredBackgroundColor" Color="#E0FFFFFF" />
+    <SolidColorBrush x:Key="DataGridRowSelectedUnfocusedBackgroundBrush" Color="#E0FFFFFF" />
+    <SolidColorBrush x:Key="DataGridRowSelectedHoveredUnfocusedBackgroundBrush" Color="#E0FFFFFF" />
+  </UserControl.Resources>
+
+  <UserControl.Styles>
+    <Style Selector="TextBox">
+      <Setter Property="IsEnabled" Value="false"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type TextBox}">
+            <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" CornerRadius="0">
+              <ScrollViewer Margin="0" x:Name="PART_ContentHost" Background="{TemplateBinding Background}">
+
+                <TextPresenter Name="PART_TextPresenter"/>
+              </ScrollViewer>
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style Selector="Button">
+      <Setter Property="IsTabStop" Value="False"/>
+      <Setter Property="Focusable" Value="False"/>
+    </Style>
+    <Style Selector="DataGrid">
+      <Setter Property="IsReadOnly" Value="True"/>
+      <Setter Property="HeadersVisibility" Value="Column"/>
+      <Setter Property="SelectionMode" Value="Single"/>
+      <Setter Property="CanUserResizeColumns" Value="False"/>
+      <Setter Property="CanUserSortColumns" Value="False"/>
+      <Setter Property="Foreground" Value="#FFFFFFFF"/>
+      <Setter Property="Background" Value="#FF424242"/>
+      <Setter Property="BorderBrush" Value="#FF575757"/>
+      <Setter Property="HorizontalGridLinesBrush" Value="#FF575757"/>
+      <Setter Property="VerticalGridLinesBrush" Value="#FF575757"/>
+      <Setter Property="RowBackground" Value="#FF2E2E2E"/>
+    </Style>
+    <Style Selector="DataGridRow">
+      <Setter Property="VerticalAlignment" Value="Center"/>
+      <Setter Property="FontFamily" Value="Verbena"/>
+    </Style>
+    <Style Selector="DataGridRow:selected">
+      <Setter Property="Foreground" Value="Black"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+    <Style Selector="DataGridRow:pointerover">
+      <Setter Property="Foreground" Value="Black"/>
+    </Style>
+
+    <Style Selector="DataGridColumnHeader">
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="Background" Value="#FF424242"/>
+      <Setter Property="FontWeight" Value="Bold"/>
+      <Setter Property="FontSize" Value="17"/>
+      <Setter Property="BorderBrush" Value="#FF575757"/>
+      <Setter Property="BorderThickness" Value="0,0,1,1"/>
+    </Style>
+  </UserControl.Styles>
+
+  <Grid>
+    <Border Background="#FF2E2E2E" BorderBrush="#FF575757" BorderThickness="1,1,1,1">
+      <Grid Margin="-1,-1,-1,-1">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="40"/>
+          <RowDefinition Height="40"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="40"/>
+          <RowDefinition Height="70"/>
+          <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0,0,0,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="160"/>
+          </Grid.ColumnDefinitions>
+          <Label Content="АРМ-61rus-1" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="0"/>
+          <Label Content="Master" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+          <Label Content="" FontFamily="Courser" FontSize="20" Background="{x:Null}" Foreground="#FFE0E0E0" BorderBrush="#FF575757" BorderThickness="0,0,1,1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2"/>
+          <Border Grid.Column="3" BorderBrush="#FF575757" BorderThickness="0,0,0,1" VerticalAlignment="Center" >
+            <Button Tag="wpf_Ctrl_CaptureObjects.DeliveryList" Content="&lt;Esc&gt; Отмена" FontFamily="Courser" FontSize="20" Margin="3,3,3,3" Background="#FF424242" Padding="2" BorderBrush="#FF575757"  Foreground="#FFE0E0E0" x:Name="BTNTOP"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+          </Border>
+        </Grid>
+        <Border BorderBrush="#FF575757" BorderThickness="0,1,0,1" Grid.Row="4">
+          <Grid Tag="\*BTNBOTTOMVIEW*\">
+            <Button Tag="wpf_Ctrl_CaptureObjects.GetObject" Content="&lt;ПРОБЕЛ&gt;  Контроль одного ОС" Margin="40,6,40,6" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF424242" BorderBrush="#FF575757" Foreground="#FFFFFFFF" FontFamily="Courser" FontSize="24" x:Name="BTNBOTTOM"/>
+          </Grid>
+        </Border>
+        <Grid Grid.Row="2">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+          <Border Grid.Column="1" Grid.Row="0" Background="#FF424242" CornerRadius="5,5,0,0" >
+            <Label x:Name="Title" Content="СПИСОК ОС" Background="{x:Null}" Foreground="#FFE0E0E0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Verbena" FontSize="24" FontWeight="Bold"/>
+          </Border>
+          <Border Grid.Column="1" Grid.Row="1" Background="#FF424242" Margin="0,3,0,0">
+            <DataGrid  Name="GRID" Tag="\*GRIDTAG*\"  Margin="7,7,7,7" FontFamily="Verbena" FontSize="20" AutoGenerateColumns="false" IsReadOnly="True" GridLinesVisibility="All"/>
+          </Border>
+        </Grid>
+      </Grid>
+    </Border>
+  </Grid>
+</UserControl>

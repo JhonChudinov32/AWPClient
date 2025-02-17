@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AWPClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1643759dfdfeeb85e9eb761849ec0a00ce48d21c")]
 [assembly: System.Reflection.AssemblyProductAttribute("AWPClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AWPClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
