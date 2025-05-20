@@ -1,22 +1,22 @@
 {
   "bridge": {
-    "url": "http://192.168.160.31:8080/",
-    "project": "leadwms",
+    "url": "http://test/",
+    "project": "test",
     "environment": "test",
     "timeout": 30
   },
   "vars": [
     {
-      "name": "LocationBarcode",
-      "value": "L20100141"
+      "name": "test",
+      "value": "01"
     },
     {
-      "name": "DocumentPrinterCode",
-      "value": "PDF24"
+      "name": "test",
+      "value": "02"
     },
     {
-      "name": "WarehousePrinterCode",
-      "value": "PDF24"
+      "name": "test",
+      "value": "03"
     }
   ],
   "client": {
@@ -52,11 +52,11 @@
     ],
     "Config": "config/setting.json",
     "AwpApi": [
-      "screens /awp/api/v1/screens",
-      "variables /awp/api/v1/variables",
-      "datasets /awp/api/v1/datasets",
-      "errors /awp/api/v1/errors",
-      "grid /awp/api/v0/grid"
+      "screens /screens",
+      "variables /variables",
+      "datasets /datasets",
+      "errors /errors",
+      "grid /grid"
     ],
     "clientName": "AWPClient",
     "ScanPrefix": [
